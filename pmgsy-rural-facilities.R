@@ -35,7 +35,7 @@ st_crs(karnatakaFacilitiesShpFile) <- 4326
 st_write(karnatakaFacilitiesShpFile, "~/Desktop/pmgsy-india-facilities", driver = "ESRI Shapefile")
 
 #plot only Facility Categories
-plot(karnatakaFacilitiesShpFile["Facility Category"], key.pos = 1, pch = 20, type = "p", axes = TRUE) 
+plot(karnatakaFacilitiesShpFile["Facility.Category"], key.pos = 1, pch = 20, type = "p", axes = TRUE) 
 
 #plot overall facilities with title & labels (x & y axes) 
 ggplot() + geom_sf(data = karnatakaFacilitiesShpFile, colour = "#b921d2", size = 0.01) +
